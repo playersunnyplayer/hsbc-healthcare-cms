@@ -1,1 +1,18 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.btn-outline-custom-primary {
+    border-color: #a72587;
+    color: #a72587;
+
+    &:hover {
+        background: #a72587;
+        color: #fff;
+    }
+}
