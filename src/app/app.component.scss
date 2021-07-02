@@ -33,13 +33,12 @@ mat-sidenav {
 }
 
 .content {
-    height: calc(100vh - 98px);
+    height: calc(100vh - 20vh);
     margin: 0;
     box-shadow: none;
 }
 
 mat-sidenav-container {
-    height: calc(100vh - 65px);
     background: #f9fafb;
 }
 

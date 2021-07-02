@@ -1,1 +1,79 @@
-<p>about-your-plan works!</p>
+<div class="d-flex">
+    <div class="col-sm-8 parentDiv" id="parentDiv" scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+        <section id="about-your-plan">
+            <h3>About your plan</h3>
+        
+            <p>The ABC Healthcare Plan is designed to cover members for the diagnosis and/or treatment of a short-term medical condition, if the treatment is medically necessary.</p>
+            <p>The plan is not intended to cover all medical conditions, for example, chronic conditions. There are some conditions and treatments that are excluded from cover (please see Exclusions and limitations for further details on this).</p>
+            <p>All treatment (including consultations and diagnostic tests) should be authorised in advance. Therefore, it is essential that you call us before you receive treatment, to ensure that your proposed treatment is eligible for cover under the plan.
+                If you do not obtain authorisation from us before receiving treatment, your claim can be denied which means you will be liable for all treatment costs incurred. If you have a medical emergency or require immediate treatment outside the Claims Helpline opening hours,</p>
+            <p>please refer to <a href="#">‘What happens in an emergency’.</a></p>
+        </section>
+        <section id="when-does-cover-start">
+            <h3>When does cover start?</h3>
+        
+            <p>The ABC Healthcare Plan is designed to cover members for the diagnosis and/or treatment of a short-term medical condition, if the treatment is medically necessary.</p>
+            <p>The plan is not intended to cover all medical conditions, for example, chronic conditions. There are some conditions and treatments that are excluded from cover (please see Exclusions and limitations for further details on this).</p>
+            <p>All treatment (including consultations and diagnostic tests) should be authorised in advance. Therefore, it is essential that you call us before you receive treatment, to ensure that your proposed treatment is eligible for cover under the plan.
+                If you do not obtain authorisation from us before receiving treatment, your claim can be denied which means you will be liable for all treatment costs incurred. If you have a medical emergency or require immediate treatment outside the Claims Helpline opening hours,</p>
+            <p>please refer to <a href="#">‘What happens in an emergency’.</a></p>
+        </section>
+        <section id="when-does-cover-end">
+            <h3>When does cover end?</h3>
+        
+            <p>The ABC Healthcare Plan is designed to cover members for the diagnosis and/or treatment of a short-term medical condition, if the treatment is medically necessary.</p>
+            <p>The plan is not intended to cover all medical conditions, for example, chronic conditions. There are some conditions and treatments that are excluded from cover (please see Exclusions and limitations for further details on this).</p>
+            <p>All treatment (including consultations and diagnostic tests) should be authorised in advance. Therefore, it is essential that you call us before you receive treatment, to ensure that your proposed treatment is eligible for cover under the plan.
+                If you do not obtain authorisation from us before receiving treatment, your claim can be denied which means you will be liable for all treatment costs incurred. If you have a medical emergency or require immediate treatment outside the Claims Helpline opening hours,</p>
+            <p>please refer to <a href="#">‘What happens in an emergency’.</a></p>
+        </section>
+        <section id="your-scheme-underwriting">
+            <h3>Your scheme underwriting</h3>
+        
+            <p>The ABC Healthcare Plan is designed to cover members for the diagnosis and/or treatment of a short-term medical condition, if the treatment is medically necessary.</p>
+            <p>The plan is not intended to cover all medical conditions, for example, chronic conditions. There are some conditions and treatments that are excluded from cover (please see Exclusions and limitations for further details on this).</p>
+            <p>All treatment (including consultations and diagnostic tests) should be authorised in advance. Therefore, it is essential that you call us before you receive treatment, to ensure that your proposed treatment is eligible for cover under the plan.
+                If you do not obtain authorisation from us before receiving treatment, your claim can be denied which means you will be liable for all treatment costs incurred. If you have a medical emergency or require immediate treatment outside the Claims Helpline opening hours,</p>
+            <p>please refer to <a href="#">‘What happens in an emergency’.</a></p>
+        </section>
+        <section id="information-for-administration">
+            <h3>Information for administration</h3>
+        
+            <p>The ABC Healthcare Plan is designed to cover members for the diagnosis and/or treatment of a short-term medical condition, if the treatment is medically necessary.</p>
+            <p>The plan is not intended to cover all medical conditions, for example, chronic conditions. There are some conditions and treatments that are excluded from cover (please see Exclusions and limitations for further details on this).</p>
+            <p>All treatment (including consultations and diagnostic tests) should be authorised in advance. Therefore, it is essential that you call us before you receive treatment, to ensure that your proposed treatment is eligible for cover under the plan.
+                If you do not obtain authorisation from us before receiving treatment, your claim can be denied which means you will be liable for all treatment costs incurred. If you have a medical emergency or require immediate treatment outside the Claims Helpline opening hours,</p>
+            <p>please refer to <a href="#">‘What happens in an emergency’.</a></p>
+        </section>
+        <section id="trustInHealth-Privacy-Notice">
+            <h3>TrustInHealth Privacy Notice</h3>
+        
+            <p>The ABC Healthcare Plan is designed to cover members for the diagnosis and/or treatment of a short-term medical condition, if the treatment is medically necessary.</p>
+            <p>The plan is not intended to cover all medical conditions, for example, chronic conditions. There are some conditions and treatments that are excluded from cover (please see Exclusions and limitations for further details on this).</p>
+            <p>All treatment (including consultations and diagnostic tests) should be authorised in advance. Therefore, it is essential that you call us before you receive treatment, to ensure that your proposed treatment is eligible for cover under the plan.
+                If you do not obtain authorisation from us before receiving treatment, your claim can be denied which means you will be liable for all treatment costs incurred. If you have a medical emergency or require immediate treatment outside the Claims Helpline opening hours,</p>
+            <p>please refer to <a href="#">‘What happens in an emergency’.</a></p>
+        </section>
+        <section id="how-to-make-a-complaint">
+            <h3>How to make a complaint</h3>
+        
+            <p>The ABC Healthcare Plan is designed to cover members for the diagnosis and/or treatment of a short-term medical condition, if the treatment is medically necessary.</p>
+            <p>The plan is not intended to cover all medical conditions, for example, chronic conditions. There are some conditions and treatments that are excluded from cover (please see Exclusions and limitations for further details on this).</p>
+            <p>All treatment (including consultations and diagnostic tests) should be authorised in advance. Therefore, it is essential that you call us before you receive treatment, to ensure that your proposed treatment is eligible for cover under the plan.
+                If you do not obtain authorisation from us before receiving treatment, your claim can be denied which means you will be liable for all treatment costs incurred. If you have a medical emergency or require immediate treatment outside the Claims Helpline opening hours,</p>
+            <p>please refer to <a href="#">‘What happens in an emergency’.</a></p>
+        </section>
+    </div>
+  
+    <div class="col-sm-4">
+      <ul class="rightLinks">
+        <li (click)="scrollTo('about-your-plan')" [ngClass]="{ 'current-section': currentSection === 'about-your-plan' }">About your plan</li>
+        <li (click)="scrollTo('when-does-cover-start')" [ngClass]="{ 'current-section': currentSection === 'when-does-cover-start' }">When does cover start?</li>
+        <li (click)="scrollTo('when-does-cover-end')" [ngClass]="{ 'current-section': currentSection === 'when-does-cover-end' }">When does cover end?</li>
+        <li (click)="scrollTo('your-scheme-underwriting')" [ngClass]="{ 'current-section': currentSection === 'your-scheme-underwriting' }">Your scheme underwriting</li>
+        <li (click)="scrollTo('information-for-administration')" [ngClass]="{ 'current-section': currentSection === 'information-for-administration' }">Information for administration</li>
+        <li (click)="scrollTo('trustInHealth-Privacy-Notice')" [ngClass]="{ 'current-section': currentSection === 'trustInHealth-Privacy-Notice' }">TrustInHealth Privacy Notice</li>
+        <li (click)="scrollTo('how-to-make-a-complaint')" [ngClass]="{ 'current-section': currentSection === 'how-to-make-a-complaint' }">How to make a complaint</li>
+      </ul>
+    </div>
+  </div>

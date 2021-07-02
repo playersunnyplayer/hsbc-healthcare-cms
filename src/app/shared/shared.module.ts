@@ -4,21 +4,25 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
+  declarations: [
+    FooterComponent,
+  ],
+  imports: [  
     CommonModule,
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    NgbModule
+    NgbModule,
   ],
   exports: [
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    NgbModule
+    NgbModule,
+    FooterComponent,
   ]
 })
 export class SharedModule { }

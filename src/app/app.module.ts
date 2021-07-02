@@ -10,20 +10,28 @@ import { LeftpanelComponent } from './components/leftpanel/leftpanel.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutYourPlanComponent } from './components/about-your-plan/about-your-plan.component';
 import { WhatIsCoveredComponent } from './components/what-is-covered/what-is-covered.component';
+import { FormsModule } from '@angular/forms';
+import { NgxScrollspyModule } from '@uniprank/ngx-scrollspy';
+import { ScrollSpyDirective } from './scroll-spy.directive';
+import { LoremIpsumComponent } from './lorem-ipsum.component';
 @NgModule({
   declarations: [
     AppComponent,
     LeftpanelComponent,
     HomeComponent,
     AboutYourPlanComponent,
-    WhatIsCoveredComponent
+    WhatIsCoveredComponent,
+    ScrollSpyDirective,
+    LoremIpsumComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    NgxScrollspyModule.forRoot({ lookAhead: true })
   ],
   providers: [],
   bootstrap: [AppComponent]

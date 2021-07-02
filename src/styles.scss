@@ -2,7 +2,8 @@
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%;
+    scroll-behavior: smooth !important; }
 body { 
     margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
@@ -14,5 +15,52 @@ body {
     &:hover {
         background: #a72587;
         color: #fff;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+      background: #eee;
+      border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #a72587; 
+    border-radius: 10px;
+  }
+
+  .parentDiv {
+    height: 80vh;
+    overflow-y: auto;
+
+    section {
+        margin: 30px 0;
+    }
+}
+
+h3 {
+    color: #a72587;
+    font-weight: 500;
+}
+
+.rightLinks {
+    border-left: solid 1px #a72587;
+    list-style: none;
+    padding: 0 0 0 10px;
+    margin: 0 0 0 30px;
+
+    li {
+        color: #666;
+        cursor: pointer;
+
+        &:hover,
+        &.current-section {
+            color: #a72587;
+        }
     }
 }
