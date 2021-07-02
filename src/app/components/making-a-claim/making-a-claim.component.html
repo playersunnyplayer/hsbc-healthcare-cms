@@ -1,0 +1,59 @@
+<div class="d-flex">
+    <div class="col-sm-8 parentDiv" id="parentDiv" scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+        <section id="making-a-claim">
+            <h3>Making a claim</h3>
+        
+            <p>Always call the claims team before arranging or receiving any treatment.</p>
+        </section>
+        <section id="requests-for-additional-information">
+            <h3>Requests for additional information</h3>
+        
+            <p>We may ask you to provide information to help us assess your claim. For example we may ask you for one or more of the following:</p>
+        </section>
+        <section id="second-opinion">
+            <h3>Second opinion</h3>
+        
+            <p>Should you decide that you would like to receive a second opinion to ensure you are fully confident with your specialists recommendations please contact us on 0208 123 XXXX to discuss pre-authorisation. Our team of nurse case managers will be able to advise and support you through this process. Second opinions will be arranged with a specialist who is an expert in their field and whom we have recognised for the purposes of providing such second opinions. Following your second opinion one of our nurse case managers will contact you to discuss the suggested treatment plan and eligibility for benefit. Without written authorisation for a second opinion benefit will not be payable for any resulting treatment.</p>
+        </section>
+        <section id="requiring-further-treatment">
+            <h3>Requiring further treatment</h3>
+        
+            <p>The Healix team will liaise with you and your medical specialist throughout your treatment and will request medical information, when we deem that this is required for the assessment of your claim. You will be asked for your consent before we do this.
+
+                As you undergo treatment, Healix will make you aware of the options that are open to you. If your medical specialist recommends treatment, you should contact the helpline as soon as possible to be sure that continued treatment is covered.</p>
+        </section>
+        <section id="are-you-insured-elsewhere">
+            <h3>Are you insured elsewhere?</h3>
+        
+            <p>You must tell us if you plan to make a claim for any of the cost of treatment from anyone else either under another healthcare plan or under an insurance policy. For example, if you received an injury that was caused by someone else such as a road traffic accident in which you are a victim, the plan will only pay a share of the total costs as appropriate.
+
+                If benefits are claimed for treatment to you when the injury or medical condition was caused by a third party, the plan shall, at its own expense, have the right to pursue such claims in any way considered fit in your name. You must co-operate with all reasonable requests in this respect and advise us of any amount you recover directly from the third party.</p>
+        </section>
+        <section id="payment-of-invoices">
+            <h3>Payment of invoices</h3>
+        
+            <p>In most cases, we will settle all pre-authorised  bills (up to agreed limits) directly with your medical specialist or hospital; or if you pay for pre-authorised treatment, please provide your bank account details in writing (via email/post), in order for us to reimburse you by bank transfer.
+
+                If you pay for pre-authorised treatment you must send all bills or invoices to us within six months from the date of your treatment. We will only accept original bills; we cannot accept photocopies or originals with alterations on them.  Failure to submit original invoices within six months of the date of treatment will result in the claim being denied.
+                
+                </p>
+        </section>
+        <section id="how-to-claim-summary">
+            <h3>How to claim summary</h3>
+        
+            <p>If you believe you require physiotherapy, but you haven't seen your GP</p>
+        </section>
+    </div>
+  
+    <div class="col-sm-4">
+      <ul class="rightLinks">
+        <li (click)="scrollTo('making-a-claim')" [ngClass]="{ 'current-section': currentSection === 'making-a-claim' }">Making a claim</li>
+        <li (click)="scrollTo('requests-for-additional-information')" [ngClass]="{ 'current-section': currentSection === 'requests-for-additional-information' }">Requests for additional information</li>
+        <li (click)="scrollTo('second-opinion')" [ngClass]="{ 'current-section': currentSection === 'second-opinion' }">Second opinion</li>
+        <li (click)="scrollTo('requiring-further-treatment')" [ngClass]="{ 'current-section': currentSection === 'requiring-further-treatment' }">Requiring further treatment</li>
+        <li (click)="scrollTo('are-you-insured-elsewhere')" [ngClass]="{ 'current-section': currentSection === 'are-you-insured-elsewhere' }">Are you insured elsewhere?</li>
+        <li (click)="scrollTo('payment-of-invoices')" [ngClass]="{ 'current-section': currentSection === 'payment-of-invoices' }">Payment of invoices</li>
+        <li (click)="scrollTo('how-to-claim-summary')" [ngClass]="{ 'current-section': currentSection === 'how-to-claim-summary' }">How to claim summary</li>
+      </ul>
+    </div>
+  </div>

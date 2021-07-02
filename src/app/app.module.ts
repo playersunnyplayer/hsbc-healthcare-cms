@@ -14,6 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { NgxScrollspyModule } from '@uniprank/ngx-scrollspy';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { LoremIpsumComponent } from './lorem-ipsum.component';
+import { MakingAClaimComponent } from './components/making-a-claim/making-a-claim.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { PolicyChangesComponent } from './components/policy-changes/policy-changes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,10 @@ import { LoremIpsumComponent } from './lorem-ipsum.component';
     AboutYourPlanComponent,
     WhatIsCoveredComponent,
     ScrollSpyDirective,
-    LoremIpsumComponent
+    LoremIpsumComponent,
+    MakingAClaimComponent,
+    ContactUsComponent,
+    PolicyChangesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="d-flex">
+    <div class="col-sm-8 parentDiv" id="parentDiv" scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+        <section id="may-2018">
+            <h3>May 2018</h3>
+        
+            <p>	
+                The Data Protection page has been updated in line with the new General Data Protection Regulation (GDPR) legislation that came into effect on 25th May 2018.</p>
+        </section>
+    </div>
+  
+    <div class="col-sm-4">
+      <ul class="rightLinks">
+        <li (click)="scrollTo('may-2018')" [ngClass]="{ 'current-section': currentSection === 'may-2018' }">May 2018</li>
+      </ul>
+    </div>
+  </div>

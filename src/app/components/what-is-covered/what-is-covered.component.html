@@ -1,1 +1,68 @@
-<p>what-is-covered works!</p>
+<div class="d-flex">
+    <div class="col-sm-8 parentDiv" id="parentDiv" scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+        <section id="what-is-covered">
+            <h3>What is covered?</h3>
+        
+            <p>The ABC Healthcare Plan will cover the cost of medically necessary treatment, as shown in the table of benefits, if you live permanently in the UK and you have an acute surgical or medical condition. You must be referred to a specialist by your GP (with the exception of physiotherapy, when you may contact us without the need for a referral, and we will assess your symptoms and help organise the most effective treatment).</p>
+        </section>
+        <section id="your-excess">
+            <h3>Your excess</h3>
+        
+            <p>All members and dependants are liable for an excess of £XXX, which is payable once every plan year, if you make an eligible claim.
+
+                Your excess will be applied to the first eligible treatment that you receive in each plan year. This is regardless of whether the treatment is for the same condition, a related condition, or for an entirely new condition. Please contact us before you receive any treatment, so that we can advise you on when your excess will apply.</p>
+        </section>
+        <section id="reasonable-and-customary-fees">
+            <h3>Reasonable and Customary Fees</h3>
+        
+            <p>We adhere to a schedule of reasonable and customary (R&C) fees. Our fee levels have been set after review of what the majority of specialist’s charge for medical services as well as a review by our Clinical Support Team and our panel of specialist advisors.</p>
+        </section>
+        <section id="table-of-benefits">
+            <h3>Table of Benefits</h3>
+        
+            <p>Please find the healthcare benefits available on your plan listed below. The limits shown apply per person, per plan year, unless otherwise stated. Please note your plan year runs from 1st April 2018 – 31st March 2019.</p>
+        </section>
+        <section id="virtual-gp">
+            <h3>Virtual GP</h3>
+        
+            <p>As part of your ABC Healthcare Plan you have access to a virtual GP service, called TrustDoc24 which is provided by Medical Solutions.</p>
+        </section>
+        <section id="cancer-cover-explained">
+            <h3>Cancer Cover Explained</h3>
+        
+            <p>We know that a cancer diagnosis can be a life changing event. Therefore we have provided a specific section within your plan to help you understand the level of cover available to you for cancer treatment.</p>
+        </section>
+        <section id="overseas-emergency-treatment">
+            <h3>Overseas Emergency Treatment</h3>
+        
+            <p>If you wish to claim for emergency treatment received abroad, you must also send us proof of how long you were abroad and this period should not exceed 28 consecutive days in any one year of cover.</p>
+        </section>
+        <section id="what-happens-in-an-emergency">
+            <h3>What happens in an emergency?</h3>
+        
+            <p>Most private hospitals are not set up to receive emergency admissions. In the event of an emergency you should:
+
+                call for an NHS ambulance
+                visit the accident and emergency department at the local NHS hospital.</p>
+        </section>
+        <section id="exclusions-and-limitations">
+            <h3>Exclusions and limitations</h3>
+        
+            <p>If you wish to claim for emergency treatment received abroad, you must also send us proof of how long you were abroad and this period should not exceed 28 consecutive days in any one year of cover.</p>
+        </section>
+    </div>
+  
+    <div class="col-sm-4">
+      <ul class="rightLinks">
+        <li (click)="scrollTo('what-is-covered')" [ngClass]="{ 'current-section': currentSection === 'what-is-covered' }">What is covered?</li>
+        <li (click)="scrollTo('your-excess')" [ngClass]="{ 'current-section': currentSection === 'your-excess' }">Your excess</li>
+        <li (click)="scrollTo('reasonable-and-customary-fees')" [ngClass]="{ 'current-section': currentSection === 'reasonable-and-customary-fees' }">Reasonable and Customary Fees</li>
+        <li (click)="scrollTo('table-of-benefits')" [ngClass]="{ 'current-section': currentSection === 'table-of-benefits' }">Table of Benefits</li>
+        <li (click)="scrollTo('virtual-GP')" [ngClass]="{ 'current-section': currentSection === 'virtual-GP' }">Virtual GP</li>
+        <li (click)="scrollTo('cancer-cover-explained')" [ngClass]="{ 'current-section': currentSection === 'cancer-cover-explained' }">Cancer Cover Explained</li>
+        <li (click)="scrollTo('overseas-emergency-treatment')" [ngClass]="{ 'current-section': currentSection === 'overseas-emergency-treatment' }">Overseas Emergency Treatment</li>
+        <li (click)="scrollTo('what-happens-in-an-emergency')" [ngClass]="{ 'current-section': currentSection === 'what-happens-in-an-emergency' }">What happens in an emergency?</li>
+        <li (click)="scrollTo('exclusions-and-limitations')" [ngClass]="{ 'current-section': currentSection === 'exclusions-and-limitations' }">Exclusions and limitations</li>
+      </ul>
+    </div>
+  </div>

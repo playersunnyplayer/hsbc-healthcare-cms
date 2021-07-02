@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollSpyService } from '@uniprank/ngx-scrollspy';
 
 @Component({
-  selector: 'app-about-your-plan',
-  templateUrl: './about-your-plan.component.html',
-  styleUrls: ['./about-your-plan.component.scss']
+  selector: 'app-making-a-claim',
+  templateUrl: './making-a-claim.component.html',
+  styleUrls: ['./making-a-claim.component.scss']
 })
-export class AboutYourPlanComponent {
+export class MakingAClaimComponent {
   currentSection = 'section1';
 
   onSectionChange(sectionId: any) {

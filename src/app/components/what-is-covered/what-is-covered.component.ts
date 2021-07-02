@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './what-is-covered.component.html',
   styleUrls: ['./what-is-covered.component.scss']
 })
-export class WhatIsCoveredComponent implements OnInit {
+export class WhatIsCoveredComponent {
+  currentSection = 'section1';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onSectionChange(sectionId: any) {
+    this.currentSection = sectionId;
+    console.log(sectionId)
   }
 
+  scrollTo(section: any) {
+    if(document) {
+      document.querySelector('#' + section)!.scrollIntoView();
+    }
+  }
 }
